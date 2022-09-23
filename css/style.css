@@ -1,0 +1,94 @@
+h3 {
+  /* Mengubah Ukuran Font */
+  font-size: 40px;
+  /* Mengubah letak text di tengah */
+  text-align: center;
+}
+
+h4 {
+  /* Mengubah warna text */
+  color: gold;
+  /* Mengubah warna background */
+  background-color: red;
+}
+/* Contoh selector universal */
+* {
+  /* Seluruh halaman website hurufnya akan berubah menjadi arial */
+  font-family: Arial, Helvetica, sans-serif;
+
+  /* Jika property margin dan padding di bawah di uncomment/dinyalalakan
+  maka seluruh tag html yang berada di html akan berada di ujung kiri atau margin dan paddignya 0
+  contoh pada tag p jika tidak di ubah marginnya memiliki margin 16px/1em, jika kita gunakan unversal selector dan mengubah
+  margin dan paddingnya 0 maka tag p tidak memiliki margin sehingga textnya akan berada di ujung kiri website */
+
+  /* margin: 0;
+  padding: 0; */
+}
+
+/* tag html p  yang memiliki  class paragraf-2 dan teks2 akan memiliki background kuning
+lihat bari 61 pada file index.html */
+.paragraf-2.teks2 {
+  background-color: yellow;
+}
+
+/* sedangkan tag html p yang memiliki class paragraf-2 saja memiliki background hijau */
+.paragraf-2 {
+  background-color: green;
+}
+
+#paragraf-2-teks3 {
+  background-color: red;
+}
+
+#paragraf-3 {
+  background-color: aqua;
+}
+
+button {
+  background-color: red;
+  /* margin top 10px rigth 20px bottom 30px dan left 15px */
+  margin: 10px 20px 30px 15px;
+  /* padding top and bottom 10px dan left and rigth 20px */
+  padding: 10px 20px;
+}
+
+.ex-border {
+  border: 10px solid green;
+}
+
+.hex {
+  /* kelbihan menggunakan hex color adalah hampir setiap browser support dan memiliki bnyak combinasi warna */
+  background-color: #04aa6d;
+}
+
+.relative {
+  position: relative;
+  /* left: 30 maksudnya isi tag html dengan class relative akan bergeser ke kanan sebanyak 30px */
+  left: 30px;
+  border: 3px solid #73ad21;
+}
+
+.relative-2 {
+  position: relative;
+  width: 400px;
+  height: 200px;
+  border: 3px solid #73ad21;
+}
+
+.absolute {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  width: 200px;
+  height: 100px;
+  border: 3px solid #73ad21;
+}
+
+/* Pada paragraf 1 warna textnya tidak akan merah krna kita mendeklarasikan selector id pada baris 83 bahwa warna textnya adalah biru,
+kesimpullnya selector id lebih dipriritaskan dibandin selector classs */
+.paragraf-1 {
+  color: red;
+}
+#idparagraf-1 {
+  color: blue;
+}

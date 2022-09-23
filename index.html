@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Cara Menghubungkan HTML dan External CSS -->
+    <link rel="stylesheet" href="/css/style.css" />
+    <!-- Internal CSS -->
+    <style>
+      h2 {
+        color: green;
+        background-color: yellow;
+      }
+      h4 {
+        color: gold;
+        background-color: red;
+      }
+    </style>
+    <title>Praktikum CSS</title>
+  </head>
+  <body>
+    <!-- Inline CSS -->
+    <h1 style="background-color: red">Contoh h1 Inline CSS</h1>
+    <p style="color: red">Contoh Paragraf Inline</p>
+
+    <!-- h1 memiliki style default yaitu font-sizenya 2em atau 32px -->
+    <h1>Contoh</h1>
+
+    <!-- p memiliki style default berupa margin 16px -->
+    <p>Contoh Paragraf</p>
+
+    <!-- Sedangkan Div tidak memiliki style default sehingga
+      tag ini seringkali digunakan untuk melakukan styling dengan css -->
+    <div
+      style="
+        font-size: 20px;
+        color: red;
+        background-color: blue;
+        text-decoration: underline;
+        font-style: italic;
+      "
+    >
+      Contoh Div Inline CSS
+    </div>
+    <div>Contoh Div Inline CSS</div>
+
+    <!-- Internal CSS lihat baris 10-21 -->
+    <h2>Ini Contoh Internal CSS</h2>
+
+    <!-- External CSS lihat file style.css -->
+    <h3>Ini Contoh External CSS</h3>
+    <h4>Tes External CSS</h4>
+
+    <!-- Contoh selector class dan id -->
+    <!-- Jika ada dua styling selector class dan id pada tag html yang sama
+    styling pada selector ID akan lebih di prioritaskan dari pada selector Class lihat
+    baris 80 dan 83 pada file style.css -->
+    <p class="paragraf-1" id="idparagraf-1">Paragraf 1</p>
+    <p class="paragraf-2">Paragraf 2 Teks 1</p>
+    <p class="paragraf-2 teks2" id="paragraf-2">Paragraf 2 Teks 2</p>
+    <p class="paragraf-2 teks3" id="paragraf-2-teks3">Paragraf 2 Teks 3</p>
+    <p id="paragraf-3">Paragraf 3</p>
+
+    <!-- Contoh Margin Lihat Style.css baris 32 -->
+    <div>Di atas button</div>
+    <button>Ini Button</button>
+
+    <!-- Contoh Border lihat style.css baris  38 -->
+    <div class="ex-border">Ini Contoh Border</div>
+
+    <!-- Contoh Hex Color lihat style,css baris 42 -->
+    <button class="hex">Contoh Hex Color</button>
+
+    <!-- Contoh Posisi Text -->
+    <h1 style="text-align: center">Heading 1 (center)</h1>
+    <h2 style="text-align: left">Heading 2 (left)</h2>
+    <h3 style="text-align: right">Heading 3 (right)</h3>
+
+    <!-- Contoh style positon relative  di style.css Lihat baris 46-->
+    <div class="relative">This div element has position: relative;</div>
+
+    <!-- Contoh style positon absolute di style.css lihat baris 59-->
+    <div class="relative-2">
+      This div element has position: relative;
+      <div class="absolute">This div element has position: absolute;</div>
+    </div>
+  </body>
+</html>
