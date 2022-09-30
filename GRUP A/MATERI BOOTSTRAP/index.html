@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS, Mengambil Bootstrap CSS menggunakan jsDElivers (Wajib)-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Praktikum Bootstrap</title>
+  </head>
+  <body>
+    <h1>Praktikum Bootstrap</h1>
+
+    <!-- Grid Sistem Pada setiap baris adalah 12 grid -->
+
+    <!-- Class Row digunakan untuk membuat isi dalam tag div class row di bawah 1 baris (inline) -->
+    <h1>Contoh Grid == 12</h1>
+    <div class="row bg-danger">
+      <!-- Karna pada contoh menggunkan 4 kolom/isi maka , kita buat col-3 karna 12/4 adalah 3 -->
+      <div class="col-3">Column 3</div>
+      <div class="col-3">Column 3</div>
+      <div class="col-3">Column 3</div>
+      <div class="col-3">Column 3</div>
+    </div>
+
+    <h1>Contoh Grid > 12</h1>
+    <div class="row bg-info">
+      <div class="col-3">Column 3</div>
+      <!-- Grid 3-->
+      <div class="col-3">Column 3</div>
+      <!-- Grid 6-->
+      <div class="col-3">Column 3</div>
+      <!-- Grid 9-->
+      <!-- Bila grid yang di gunakan > 12 maka otomatis bootstrap akan membuat
+        isi dari grid tersebut ke bwah/ baris baru
+      Contohnya seperti di bawah grid skrang 9 ketika di tambah grid 4 maka isi dari grid 4 (col-4) akan ke bawah
+      krna 9 + 4 = 13 -->
+      <div class="col-4">Column 4</div>
+      <!-- Grid 13-->
+    </div>
+
+    <h1>Contoh Lain Menggunakan Grid</h1>
+    <!-- Container berfungsi untuk membungkus blok/seluruh isi di dalamnya,
+      sehingga isi yang dibungkus oleh container terlihat rapi terhadap ukuran layar. -->
+    <div class="container bg-danger">
+      <div class="row">
+        <div class="col-3">1 of 2</div>
+        <div class="col-3">2 of 2</div>
+        <div class="col-3">1 of 2</div>
+        <div class="col-3">2 of 2</div>
+      </div>
+      <div class="row">
+        <div class="col-6">1 of 3</div>
+        <div class="col-6">2 of 3</div>
+        <div class="col-2">3 of 3</div>
+      </div>
+    </div>
+
+    <h1>Contoh Menggunakan BreakPoint</h1>
+    <!-- Ketika di buka pada device yang berukuran xxl (≥1400px)  maka grid yang digunakan adalah 4
+    jika di pada ukuran devid md (≥ 768px) maka grid yang digunakan 6
+    jika di pada ukuran devid kurang dari md (< 768px) maka grid yang digunakan adalah 12-->
+    <div style="background-color: chocolate" class="col-12 col-md-6 col-xxl-4">
+      Menggunakan BreakPoint
+    </div>
+
+    <h1>Kombinasi container row col</h1>
+    <div class="container bg-warning">
+      <div class="row g-2">
+        <div class="col-6">
+          <div class="p-3 bg-light">Custom column padding</div>
+        </div>
+        <div class="col-6">
+          <div class="p-3 bg-light">Custom column padding</div>
+        </div>
+        <div class="col-4">
+          <div class="p-3 bg-light">Custom column padding</div>
+        </div>
+        <div class="col-4">
+          <div class="p-3 bg-light">Custom column padding</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- my artinya margin margin top and bottom -->
+    <!-- mx artinya margin margin left and right-->
+
+    <h1 class="text-center my-4">GAMBAR</h1>
+    <div class="container bg-danger">
+      <div class="row">
+        <div class="col-6">
+          <img src="img/img-1.jpg" class="img-fluid my-4" alt="" />
+        </div>
+        <div class="col-6 text-center text-light">
+          <p class="m-4" style="text-align: justify">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
+            hic quae eum, qui voluptatum corrupti, velit quisquam autem, sit
+            consequatur ullam omnis adipisci. Impedit tenetur reiciendis,
+            dolorum optio unde illo.
+          </p>
+          <p class="m-4" style="text-align: justify">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
+            hic quae eum, qui voluptatum corrupti, velit quisquam autem, sit
+            consequatur ullam omnis adipisci. Impedit tenetur reiciendis,
+            dolorum optio unde illo.
+          </p>
+          <p class="m-4" style="text-align: justify">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
+            hic quae eum, qui voluptatum corrupti, velit quisquam autem, sit
+            consequatur ullam omnis adipisci. Impedit tenetur reiciendis,
+            dolorum optio unde illo.
+          </p>
+          <p class="m-4" style="text-align: justify">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
+            hic quae eum, qui voluptatum corrupti, velit quisquam autem, sit
+            consequatur ullam omnis adipisci. Impedit tenetur reiciendis,
+            dolorum optio unde illo.
+          </p>
+        </div>
+      </div>
+      <div class="row bg-warning mx-5">
+        <!-- Membuat class sendiri jika ingin mengubah sesuatu yang tidak ada d bootstrap
+        contoh di sini ingin mengubah warna -->
+        <div class="col-4 border self-color">HD 1440</div>
+        <div class="col-4">Anime</div>
+        <div class="col-4">18-09-2022</div>
+      </div>
+    </div>
+
+    <h1>Contoh Image Responsive</h1>
+    <!-- Ketika gambar di buka pada lebar device
+       yang berbeda otomatis gambar akan menyesuaikan  -->
+    <img src="img/img-2.jpg" class="img-fluid m-4" alt="" />
+
+    <h1>Contoh Membuat Card</h1>
+    <div class="container">
+      <div class="row">
+        <!-- Ketika di ukuran lg (≥992px) maka grid yang digunakan card ini 4
+        ketika ukuran md (≥768px) grid yang digunakan card adalah 6
+        ketika ukuran < md maka grid cardnya otomatis 12 (card otomatis menjadi 1 setiap baris) -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card" style="width: 18rem">
+            <img src="img/img-1.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <!-- Ketika di ukuran lg (≥992px) maka grid yang digunakan card ini 4
+        ketika ukuran md (≥768px) grid yang digunakan card adalah 6
+        ketika ukuran < md maka grid cardnya otomatis 12 (card otomatis menjadi 1 setiap baris) -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card" style="width: 18rem">
+            <img src="/img/img-1.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <!-- Ketika di ukuran lg (≥992px) maka grid yang digunakan card ini 4
+        ketika ukuran sm (≥576px) grid yang digunakan card adalah 8 -->
+        <div class="col-sm-8 col-lg-4">
+          <div class="card" style="width: 18rem">
+            <img src="/img/img-1.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mengambil Bundel Dengan JsDeliver (Wajib) -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
