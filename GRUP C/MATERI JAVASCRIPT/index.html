@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <title>Praktikum JavaScript Thoriq</title>
+
+    <!-- Bila tag script (kode javascript) berada dalam tag head (Internal JavaScript)
+        penempatan tag script pada head tidak disarankan maka kode javascript akan dieksekusi terlebih dahulu
+        sebelum isi dari body html di ekekusi , Contohnya seperti kode di bawah-->
+    <script>
+      // disini kita membuat variaabel a dan tag html yang memiliki id semangat (baris 26)
+      // Ini di sebut DOM (Dipelajari minggu depan)
+
+      // Disini saya ingin menambahkan text "sedang beljar ....",
+      // Tapi ketika di lihat di console browser terdapat error (uncomment baris 16-18 dibawah jika ingin meliihat error),
+      // karena tag html yang memiliki id semangat (baris 26 belum di deklarasi
+
+      //   let a = document.getElementById("semangat");
+      //   a.innerHTML += "Sedang belajar JavaScript, semangat...!!!";
+    </script>
+  </head>
+  <body>
+    <!-- Uncommet jika ingin melihat hasilnya -->
+
+    <!-- <h1>Belajar JavaScript</h1>
+    <p>Saya sedang belajar JavaScript</p>
+    <div id="semangat"></div> -->
+
+    <!-- Code dalam tag script di bawah tidak error karena
+        tag html yang memiliki id semangat(baris 26) sudah di baca oleh browser,
+    inilah mengapa penempatan tag script disarankan pas di atas penutup tag body (baris 39) -->
+
+    <!-- Uncommet jika ingin melihat hasilnya -->
+    <!-- <script>
+      let a = document.getElementById("semangat");
+      a.innerHTML += "Semangat Siuuuuu...!!!";
+    </script> -->
+
+    <script src="script.js"></script>
+  </body>
+</html>
