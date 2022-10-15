@@ -1,10 +1,7 @@
 // Nomor 1
-var jawaban1 = document.querySelector("div.p1#b2");
+var jawaban1 = document.querySelector("h2.paragraf2#baris1");
 
 //  Nomor 2
-var namaku = prompt("Masukan nama: ");
-main(namaku);
-
 var nama = document.getElementById("nama");
 function sayHello() {
   var inputNama = prompt("Masukkan Nama:");
@@ -30,3 +27,4 @@ function main(nama) {
   }
   console.log(favorite(makanan, minuman));
 }
+main("Budi");
