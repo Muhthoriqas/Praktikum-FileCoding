@@ -1,7 +1,7 @@
 // //TODO: Function JavaScript
 // Penulisan Function Biasa
 function sayHello() {
-  console.log("Hello Funcion js");
+  console.log("Hello Grup D");
 }
 
 // Memanggil Function
