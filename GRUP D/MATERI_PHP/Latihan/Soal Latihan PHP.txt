@@ -1,0 +1,9 @@
+Soal Latihan
+Buatlah 2 Inputtan:
+A. Form untuk nama
+B. Form Dropdown untuk memilih mood senang atau sedih
+
+Jika user sudah mengisi nama dan memilih mood , lalu mengkik tombol OK/SUBMIT
+halaman browser akan berpindah ke result.php dan muncul tulisan 
+A. Bila user memilih senang , maka muncul "Yey nama lagi senang"
+B. Bila sedih , maka muncul "Ikutan sedih nih nama"
